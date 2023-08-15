@@ -72,7 +72,8 @@ $(function () {
             // });
             $(".job").css("color", "#1F2421");
             $(".filter-button").css("color", "");
-            $(".modal-content").css("background-image", "url(/assets/images/paper1.jpg)");
+            // $(".modal-content").css("background-image", "url(/assets/images/paper1.jpg)");
+            $(".modal-content").css("background-color", "#f8f8f8");
             $(".btn-close").removeClass("btn-close-white");
             $(".to-top-d").css("color", "#1F2421");
             $("body").css("background-image", "url(/assets/images/paper1.jpg)");
@@ -93,7 +94,8 @@ $(function () {
 
             $(".job").css("color", "#f8f8f8");
             $(".filter-button").css("color", "#f8f8f8");
-            $(".modal-content").css("background-image", "url(/assets/images/black-paper2.jpg)");
+            // $(".modal-content").css("background-image", "url(/assets/images/black-paper2.jpg)");
+            $(".modal-content").css("background-color", "#212529");
             $(".btn-close").addClass("btn-close-white");
             $(".to-top-d").css("color", "#f8f8f8");
             $("body").css("background-image", "url(/assets/images/black-paper2.jpg)");
