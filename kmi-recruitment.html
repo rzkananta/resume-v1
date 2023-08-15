@@ -1,0 +1,48 @@
+<script type="text/javascript">
+    // $(".modal-body").on("load", function () {
+    // });
+    $(function () {
+        $(".modal-content").css("background-image", "url(/assets/images/paper1.jpg)");
+        if ($("body").hasClass("bg-dark")) {
+            $(".modal-content").css("background-image", "url(/assets/images/black-paper2.jpg)");
+            $("p").addClass("secondary-color");
+            $(".title").addClass("secondary-color");
+            $("span").addClass("secondary-color");
+            $("i").addClass("icon-white");
+            $(".horizontal-line").removeClass("border-dark");
+            $(".horizontal-line").addClass("border-white");
+            // $(".img-portfolio").css("box-shadow", "#f8f8f8"); 
+        } 
+
+
+    })
+</script>
+
+
+
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="mb-3">
+            <img src="assets/images/hrrecruitment.png" class="img-portfolio rounded-3 " width="350px" height="200px">
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <h3 class="fw-semibold title">KMI Recruitment</h3>
+        <hr class="border-1 border-dark horizontal-line">
+        <p class="text-start my-4 ">
+            The Human Resource Recruitment System is a web-based application used
+            by the Human Resources department of PT. Kawasaki Motor Indonesia to organize job applicant
+            data and recruitment process
+        </p>
+        <hr class="border-1 border-dark horizontal-line">
+        <div class="my-4">
+            <a type="button" href="https://kmi-recruitment.kawasaki.co.id/hrrecruitment/" target="_blank"
+                class="font-monospace fw-semibold link-underline link-underline-opacity-0 project-link">
+                <span class="discover-text">Discover the project</span> &nbsp;
+                <i class="fa-solid fa-arrow-right discover-icon"></i>
+            </a>
+        </div>
+    </div>
+</div>

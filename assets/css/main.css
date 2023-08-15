@@ -1,0 +1,519 @@
+* {
+    color: #1F2421;
+}
+
+
+.bg-main {
+    background-color: #f8f8f8;
+}
+
+
+.bg-black {
+    background-color: #1F2421;
+}
+
+.main-color {
+    color: #49A078;
+}
+
+.secondary-color {
+    color: #f5f5f5;
+}
+
+.icon-white {
+    color: #f8f8f8;
+
+}
+
+/* homepage customization */
+
+.switch-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 60px;
+    height: 33px;
+    background: grey;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+}
+
+label:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+input:checked+label {
+    background: #9CC5A1;
+}
+
+input:checked+label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+
+label:active:after {
+    width: 30px;
+}
+
+
+
+
+
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0.0deg)
+    }
+
+    10% {
+        transform: rotate(14.0deg)
+    }
+
+    /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+        transform: rotate(-8.0deg)
+    }
+
+    30% {
+        transform: rotate(14.0deg)
+    }
+
+    40% {
+        transform: rotate(-4.0deg)
+    }
+
+    50% {
+        transform: rotate(10.0deg)
+    }
+
+    60% {
+        transform: rotate(0.0deg)
+    }
+
+    /* Reset for the last half to pause */
+    100% {
+        transform: rotate(0.0deg)
+    }
+}
+
+
+.wave {
+    animation-name: wave-animation;
+    /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;
+    /* Change to speed up or slow down */
+    animation-iteration-count: infinite;
+    /* Never stop waving :) */
+    transform-origin: 70% 70%;
+    /* Pivot around the bottom-left palm */
+    display: inline-block;
+}
+
+.home-page {
+    /* height: 100vh; */
+    max-height: 120rem;
+    margin-top: 10em;
+    margin-bottom: 10em;
+}
+
+@media (max-width: 768px) {
+    .homepage {
+        margin-top: 5em;
+        margin-bottom: 5em;
+    }
+
+    .home-profile-2 {
+        margin-top: 5em;
+        justify-content: center;
+    }
+
+}
+
+.hello-text {
+    background-color: #49A078;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 10px 30px 10px 20px;
+    border-radius: 20px;
+    border-bottom-left-radius: 0px;
+}
+
+.home-contact {
+    cursor: pointer;
+    font-size: 14px;
+}
+
+div.home-contact i:hover {
+    color: #49A078;
+}
+
+.sosmed-list {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.sosmed-link-color,
+.link-modal {
+    color: #49A078;
+}
+
+/* .sosmed-list a:hover {
+    color: #1F2421
+} */
+
+.skill-list {
+    background-color: transparent;
+    border-color: #216869;
+    cursor: pointer;
+}
+
+.skill-list:hover {
+    background-color: #216869;
+}
+
+
+.skill-list:hover>span {
+    color: #DCE1DE;
+}
+
+
+.brighten img {
+    cursor: pointer;
+    filter: grayscale(100%);
+    object-fit: fill;
+}
+
+.brighten img:hover {
+    filter: grayscale(0%);
+    transition: 1s ;
+}
+
+
+.profile-container {
+    margin: 0px 8em 0px 8em;
+    border-radius: 30px 30px 30px 30px;
+    background-color: #216869;
+
+}
+
+.highlight-link {
+    -webkit-transition: all .2s ease-in-out;
+    color: black;
+    transition: all .2s ease-in-out;
+    font-weight: 400;
+    text-decoration: none;
+    display: inline-block;
+    padding: 2px 3px;
+    text-decoration: none;
+    -webkit-box-shadow: inset 0 -3px 0 #49A078;
+    box-shadow: inset 0 -3px 0 #49A078;
+}
+
+.highlight-link:hover {
+    -webkit-box-shadow: inset 0 -33px 0 0 #49A078;
+    box-shadow: inset 0 -33px 0 0 #49A078;
+    color: #fff;
+}
+
+/* homepage customization */
+
+
+/* about page*/
+
+
+.about {
+    /* height: 120vh; */
+    max-height: 120rem;
+    margin-top: 10em;
+    margin-bottom: 10em;
+}
+
+.about-title {
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.about-title hr {
+    opacity: 0;
+}
+
+
+@media (max-width: 768px) {
+
+    .about-title {
+        text-align: center;
+    }
+
+    .about-title .vr {
+        display: none;
+    }
+
+    .about-title hr {
+        opacity: 1;
+    }
+
+    .about-desc {
+        text-align: center;
+    }
+
+}
+
+/* about page*/
+
+
+/* experiences page*/
+
+
+.experiences {
+    /* height: 120vh; */
+    max-height: 120rem;
+    margin-top: 10em;
+    margin-bottom: 10em;
+}
+
+.experiences-title {
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.experiences-title hr {
+    opacity: 0;
+}
+
+.joblist hr {
+    width: 80%;
+}
+
+@media (max-width: 768px) {
+
+    .experiences-title {
+        text-align: center;
+    }
+
+    .experiences-title .vr {
+        display: none;
+    }
+
+    .experiences-title hr {
+        opacity: 1;
+    }
+
+    .joblist {
+        margin-top: 30px;
+    }
+
+    .joblist hr {
+        width: 100%;
+    }
+}
+
+
+
+
+/* experiences page*/
+
+
+/* Project Gallery Page */
+
+.project-gallery {
+    margin-top: 10em;
+    margin-bottom: 10em;
+}
+
+.gallery-title {
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.gallery-title-ul {
+    content: "";
+    position: absolute;
+    width: 50px;
+    left: 48%;
+    height: 3px;
+    border-bottom: 4px solid #49A078;
+}
+
+.filter-button {
+    font-size: 18px;
+    color: #1F2421;
+    margin-bottom: 30px;
+
+}
+
+
+
+.filter-button.active {
+    background-color: #216869 !important;
+    color: #DCE1DE;
+}
+
+.gallery-portfolio {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+
+.img-portfolio {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+
+
+.gallery-portfolio:hover .img-portfolio {
+    opacity: 0.2;
+}
+
+
+.portfolio-ico {
+    color: #1F2421;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: .9s ease;
+    text-align: center;
+    opacity: 0;
+}
+
+.gallery-portfolio:hover .portfolio-icon {
+    opacity: 1;
+
+}
+
+.portfolio-text {
+    color: #1F2421;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: .9s ease;
+}
+
+.gallery-portfolio:hover .portfolio-text {
+    opacity: 1;
+
+}
+
+.portfolio-text-category {
+    font-size: 12px;
+    font-weight: 600;
+    color: #1F2421;
+    position: absolute;
+    bottom: 10%;
+    right: 0%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: .9s ease;
+    opacity: 0;
+}
+
+.gallery-portfolio:hover .portfolio-text-category {
+    opacity: 1;
+}
+
+.project-link:hover>.discover-text {
+    margin-right: 10px;
+    transition: 0.7s ease;
+}
+
+
+
+.horizontal-line {
+    opacity: 1;
+    color: red;
+}
+
+/* Project Gallery Page */
+
+
+/* footer */
+.footer {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.group-sosmed {
+    justify-content: end;
+}
+
+@media (max-width: 768px) {
+
+    .cr {
+        text-align: center;
+    }
+
+    .group-sosmed {
+        justify-content: center;
+    }
+
+}
+
+/* footer */
+
+
+
+/* button to the top */
+.to-top {
+    cursor: pointer;
+    padding: 5px 3px;
+    /* background: #9CC5A1; */
+    /* color: #fff; */
+    position: fixed;
+    bottom: 10px;
+    right: 6px;
+    font-size: 28px;
+    display: none;
+    /* width: 50px;
+    height: 50px; */
+}
+
+.to-top:hover {
+    margin-bottom: 13px;
+    transition: 0.6s ease;
+}
+
+
+/* button to the top */
+
